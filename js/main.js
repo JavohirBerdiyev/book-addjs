@@ -34,11 +34,11 @@ elBtnGroup.addEventListener('click', function (e) {
     if (e.target.innerHTML == typeone) {
       let newBadiiy = newArr.filter(function (val) {
         return val.type == typeone;
-      })
+      });
 
       newList = newBadiiy.map(function (val) {
         return `<li class="list-group-item"> ${val.title} <span class="float-end badge bg-info">${val.type}</span> </li>`
-      })
+      });
       elListGroup.innerHTML = newList.join('');
     }
   }
